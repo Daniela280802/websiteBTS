@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <title>Butter</title>
+    <style>
+
+    body {
+    background: url(https://i.ibb.co/K0bM0nq/lmhb-WPI5w-Y.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+   }
+
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+img[tabindex="0"] {
+  cursor: zoom-in;
+}
+img[tabindex="0"]:focus {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  max-width: 99%;
+  max-height: 99%;
+  margin: auto;
+  box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210,210,210,.4);
+}
+img[tabindex="0"]:focus,
+img[tabindex="0"]:focus ~ * {
+  pointer-events: none;
+  cursor: zoom-out;
+}
+
+btn {
+ position: relative;
+ padding: 1em 1.8em;
+ outline: none;
+ border: 1px solid #303030;
+ background: #FFFFFF;
+ color: #303030;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 10px;
+ overflow: hidden;
+ transition: 0.2s;
+ border-radius: 15px;
+ cursor: pointer;
+ font-weight: bold;
+}
+
+btn:hover {
+ box-shadow: 0 0 10px #5d00ff, 0 0 25px #001eff, 0 0 50px #007bff;
+ transition-delay: 0.6s;
+}
+
+button span {
+ position: absolute;
+}
+
+btn span:nth-child(1) {
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #5d00ff);
+}
+
+btn:hover span:nth-child(1) {
+ left: 100%;
+ transition: 0.7s;
+}
+
+btn span:nth-child(3) {
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #001eff);
+}
+
+btn:hover span:nth-child(3) {
+ right: 100%;
+ transition: 0.7s;
+ transition-delay: 0.35s;
+}
+
+btn span:nth-child(2) {
+ top: -100%;
+ right: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(180deg, transparent, #007bff);
+}
+
+btn:hover span:nth-child(2) {
+ top: 100%;
+ transition: 0.7s;
+ transition-delay: 0.17s;
+}
+
+btn span:nth-child(4) {
+ bottom: -100%;
+ left: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(360deg, transparent, #001eff);
+}
+
+btn:hover span:nth-child(4) {
+ bottom: 100%;
+ transition: 0.7s;
+ transition-delay: 0.52s;
+}
+
+btn:active {
+ background: #ae00af;
+ background: linear-gradient(to top right, #5d00ff, #001eff);
+ color: #bfbfbf;
+ box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #5d00ff;
+ transition: 0.1s;
+}
+
+btn:active span:nth-child(1)
+span:nth-child(2)
+span:nth-child(2)
+span:nth-child(2) {
+ transition: none;
+ transition-delay: none;
+}
+
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+    </style>
+</head>
+
+
+<body>
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+          <font style="italic" face="footlight mt light"><h1>Butter</h1></font>
+          <font style="italic" face="footlight mt light" color="gray"><h4><p class="text-focus-in">В песне есть отсылка к песне Майкла Джексона - Smooth Criminal. Группа BTS — поклонники таланта Майкла, и неоднократно использовали некоторые элементы его хореографии.<br>Также можно заметить отсылку к песне Usher — U Got It Bad.<br>"«Butter» — харизматичный, непринужденный и веселый сингл, похожий на признание в восхищении"</p></h4></font>
+        <p>
+            <btn onclick="window.location.href = '/dynamite';">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Назад
+            </btn>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/56djywY/BTS-Butter2520photo-watermarked.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/HXTwgQL/BTS-drops-Cooler-and-Sweeter-remixes-of-Butter-accompanied-with-freestyle-music-video.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/6t8Gmvy/20210519133216e5805fc101.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/x29h3qb/file.png" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/KL4dffw/tumblr-247636020cd2629e748c3ac5b106ff6f-93a1336b-1280.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/mDLn3q6/ab67706c0000bebbef2f7913d50526d80cf22010.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/KbMtqng/img-20210512-205122.webp" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/TkHSmZ2/o0461058315026038238.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/Cmzgb5z/HD-wallpaper-suga-bts-butter-kpop-min-suga-ed-sheeran-bangtan-sonyeondan-agustd-butter-album-yoongi.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/XsQmmnD/e66c2289ec12eaebabf5d82e6b4d2b7f.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/0Y7PVVx/HD-wallpaper-jhope-bts-hobbie-j-hope-kpop-jung-hoseok-bangtan-sonyeondan-bts-jhope-bts-butter-hoseok.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/dbHc21w/8188d82b41bc14dad3da6591f97f999f.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/JQCBJ8X/80782d7b73a0943bfe8afc4e726f8287.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/dWXYdvR/original-4.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/hmGXKCY/2cab31fe59e63d9c1dcca61507772d97.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/QfWwd9H/v-bts-butter-7983.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/0GfMC0L/0bd65c2315049a3a64d89231f6c6cef0.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/mTSL2M0/bts-jungkook-u-fotosesiyi-summer-beach-dlya-butter-mv-2021-shpalery-1280x1024-32.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/WBjGx98/megan.webp" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/bJG34sG/07532736.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+</body>

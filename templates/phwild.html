@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <title>Album Dark&Wild</title>
+    <style>
+
+    body {
+    background: url(https://i.ibb.co/K0bM0nq/lmhb-WPI5w-Y.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+   }
+
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+img[tabindex="0"] {
+  cursor: zoom-in;
+}
+img[tabindex="0"]:focus {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  max-width: 99%;
+  max-height: 99%;
+  margin: auto;
+  box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210,210,210,.4);
+}
+img[tabindex="0"]:focus,
+img[tabindex="0"]:focus ~ * {
+  pointer-events: none;
+  cursor: zoom-out;
+}
+
+btn {
+ position: relative;
+ padding: 1em 1.8em;
+ outline: none;
+ border: 1px solid #303030;
+ background: #FFFFFF;
+ color: #303030;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 10px;
+ overflow: hidden;
+ transition: 0.2s;
+ border-radius: 15px;
+ cursor: pointer;
+ font-weight: bold;
+}
+
+btn:hover {
+ box-shadow: 0 0 10px #5d00ff, 0 0 25px #001eff, 0 0 50px #007bff;
+ transition-delay: 0.6s;
+}
+
+button span {
+ position: absolute;
+}
+
+btn span:nth-child(1) {
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #5d00ff);
+}
+
+btn:hover span:nth-child(1) {
+ left: 100%;
+ transition: 0.7s;
+}
+
+btn span:nth-child(3) {
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #001eff);
+}
+
+btn:hover span:nth-child(3) {
+ right: 100%;
+ transition: 0.7s;
+ transition-delay: 0.35s;
+}
+
+btn span:nth-child(2) {
+ top: -100%;
+ right: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(180deg, transparent, #007bff);
+}
+
+btn:hover span:nth-child(2) {
+ top: 100%;
+ transition: 0.7s;
+ transition-delay: 0.17s;
+}
+
+btn span:nth-child(4) {
+ bottom: -100%;
+ left: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(360deg, transparent, #001eff);
+}
+
+btn:hover span:nth-child(4) {
+ bottom: 100%;
+ transition: 0.7s;
+ transition-delay: 0.52s;
+}
+
+btn:active {
+ background: #ae00af;
+ background: linear-gradient(to top right, #5d00ff, #001eff);
+ color: #bfbfbf;
+ box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #5d00ff;
+ transition: 0.1s;
+}
+
+btn:active span:nth-child(1)
+span:nth-child(2)
+span:nth-child(2)
+span:nth-child(2) {
+ transition: none;
+ transition-delay: none;
+}
+
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+    </style>
+</head>
+
+
+<body>
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+          <font style="italic" face="footlight mt light"><h1>Dark&Wild</h1></font>
+          <font style="italic" face="footlight mt light"><h3>Tracklist</h3></font>
+          <font style="italic" face="footlight mt light" color="gray" size="4"><p class="text-focus-in">"Intro: What Am I To You"<br>"Danger"<br>"War of Hormone (호르몬 전쟁)"<br>"Hip Hop Lover (힙합성애지)"<br>"Let Me Know"<br>"Rain"<br>"BTS Cypher Pt.3: Killer" (feat. Supreme Boi)<br>"Interlude: What Are You Doing Now"<br>"Can You Turn Off Your Phone (핸드폰 좀 꺼줄래)"<br>"Blanket Kick (이불킥)"<br>"24/7 = Heaven"<br>"Look Here (여기 봐)"<br>"2nd Grade (2학년)"<br>"Outro: Do You Think This Makes Sense?"</p></font>
+        <p>
+            <btn onclick="window.location.href = '/wild';">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Назад
+            </btn>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/Bz5DxC7/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/VW0dJc4/main-qimg-d31f2db69f1c86943289b8cb0ffa01c7-lq.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/TBfqzY9/version01-02-m.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/YB0sm4p/20140814-BTS-1.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/nm61C4F/f963fd3b79cf4eb1008b3e910217ea8e.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/1TMh914/8a3188afa46d33f9515ed9900a8dd852.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/M2WJnhy/40d87619e8f10c57b81c7618888825e4.png" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/nzzTx8M/9f846cfc611f8e13c492269a5d35d58e.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/mRWHq5j/3f9814b9a617df1bfaa17402c3321a15.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/GdbGPR1/e48e27b247d7bee4071c810278517b92.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/yX8fvjd/305254bb5362399a656ad5ed5e7d3e45.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/4Sms0cG/d783916fe07acdfb262f5453d4ce8d9b.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/tHVMvDC/Suga-full-201155.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/nbGGKpM/febc07c2b27f72a0ed552ed0e239c647.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/z4HqYVK/a4f7ce12039c0cbe5b675b17646c8185.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/MZk1qFW/a948afb44c3704f41742d93bea2c58c7.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/wyZRcVR/12c3e4f9b60b3849c85727a65d17a711.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/0Y60Mm0/3c3d134650580a1a4d34d5356ee269f1.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/sCNmZrd/64f6316c2aa10edd9a58356b0656a429.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/1vbnpbQ/be38a9f7efa5d3156cb83035c8c5c8d1.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/s9X7bYW/e9f4d5a955b8a27cfcf47f68f016f153.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/qgCq40H/bc2a09a159a4a29e9184c80c0ec122e8.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/t4KmwR9/4e101294521e91ba0c3d742ffb9608d8.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/0VHvVZb/2405dd3d528c3691dcdb6ddc7b7a1791.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/2yqs4kb/45cd3e3eac314c010d33c91d5bc92482.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/9ZWSs1M/3ce1d3362759884aedb7a8db404a43d2.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/qnMdCNX/V-Kim-Taehyung-full-201817.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/N3qNS47/931ea6a4c565dda605c102567ac0c67d.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/wLLpJYR/e47206f35dbf112b8fd05db1ba6b9d2d.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/sKQPNYd/b95e1187a7d2d35daf18ef77da25b03d.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/P9Q90zx/version02-01-m.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/hD9NWxR/87f9c6b5311a50e33e39fedaaf414855.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+</body>

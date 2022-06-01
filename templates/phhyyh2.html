@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <title>Album HYYH pt2</title>
+    <style>
+
+    body {
+    background: url(https://i.ibb.co/K0bM0nq/lmhb-WPI5w-Y.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+   }
+
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+img[tabindex="0"] {
+  cursor: zoom-in;
+}
+img[tabindex="0"]:focus {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  max-width: 99%;
+  max-height: 99%;
+  margin: auto;
+  box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210,210,210,.4);
+}
+img[tabindex="0"]:focus,
+img[tabindex="0"]:focus ~ * {
+  pointer-events: none;
+  cursor: zoom-out;
+}
+
+btn {
+ position: relative;
+ padding: 1em 1.8em;
+ outline: none;
+ border: 1px solid #303030;
+ background: #FFFFFF;
+ color: #303030;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 10px;
+ overflow: hidden;
+ transition: 0.2s;
+ border-radius: 15px;
+ cursor: pointer;
+ font-weight: bold;
+}
+
+btn:hover {
+ box-shadow: 0 0 10px #5d00ff, 0 0 25px #001eff, 0 0 50px #007bff;
+ transition-delay: 0.6s;
+}
+
+button span {
+ position: absolute;
+}
+
+btn span:nth-child(1) {
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #5d00ff);
+}
+
+btn:hover span:nth-child(1) {
+ left: 100%;
+ transition: 0.7s;
+}
+
+btn span:nth-child(3) {
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #001eff);
+}
+
+btn:hover span:nth-child(3) {
+ right: 100%;
+ transition: 0.7s;
+ transition-delay: 0.35s;
+}
+
+btn span:nth-child(2) {
+ top: -100%;
+ right: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(180deg, transparent, #007bff);
+}
+
+btn:hover span:nth-child(2) {
+ top: 100%;
+ transition: 0.7s;
+ transition-delay: 0.17s;
+}
+
+btn span:nth-child(4) {
+ bottom: -100%;
+ left: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(360deg, transparent, #001eff);
+}
+
+btn:hover span:nth-child(4) {
+ bottom: 100%;
+ transition: 0.7s;
+ transition-delay: 0.52s;
+}
+
+btn:active {
+ background: #ae00af;
+ background: linear-gradient(to top right, #5d00ff, #001eff);
+ color: #bfbfbf;
+ box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #5d00ff;
+ transition: 0.1s;
+}
+
+btn:active span:nth-child(1)
+span:nth-child(2)
+span:nth-child(2)
+span:nth-child(2) {
+ transition: none;
+ transition-delay: none;
+}
+
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+    </style>
+</head>
+
+
+<body>
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+          <font style="italic" face="footlight mt light"><h1>HYYH pt2</h1></font>
+          <font style="italic" face="footlight mt light"><h3>Tracklist</h3></font>
+          <font style="italic" face="footlight mt light" color="gray" size="4"><p class="text-focus-in">"INTRO : Never Mind"<br>"RUN"<br>"Butterfly"<br>"Whalien 52"<br>"Ma City"<br>"Silver Spoon"<br>"SKIT : One night in a strange city"<br>"Autumn Leaves"<br>"OUTRO : House Of Cards"</p></font>
+        <p>
+            <btn onclick="window.location.href = '/youth';">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Назад
+            </btn>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/0n8dLdN/photo02-01.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/4T24z46/photo02-02.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/6HyCcFr/4dc09ac37b93e0720a59fb1f8e7ef90f.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/chhm56H/photo01-01.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/7gDxSvC/photo01-03.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/b2bmn2n/photo01-02.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/ypFxwR2/photo02-04.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/cDHVkHr/photo02-03.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/gRsSt5D/photo01-07.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/Xs5xV3N/photo01-06.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/xfLFRfb/photo02-08.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/tDSKVDz/photo02-07.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/mF7fXGH/photo01-04.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/MPyNqsW/photo01-05.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/9ZskBtC/photo02-06.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/fvPTt7d/photo02-05.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/yWzWtT0/photo01-09.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/dpNn5Ks/photo01-08.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/nCHYQwr/photo02-10.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/cNZjQKL/photo02-09.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/yd9yP2z/photo01-11.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/7R6zQQb/photo01-10.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/MB4RSRp/photo02-12.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/q7Hf8Xn/photo02-11.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/bzMrvdL/photo01-13.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/HnHFtBs/photo01-12.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/NWhqpxJ/photo02-14.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/9tvLQ4w/photo02-13.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/Y2PCLRD/photo01-15.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/gFTFWrn/photo01-14.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/mTwX9gH/photo02-16.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/7kK51FL/photo02-15.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+</body>

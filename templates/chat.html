@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Let's chatting</title>
+    <link href="../static/bootstrap.min.css" rel="stylesheet" />
+    <link href="../static/style.css" rel="stylesheet" />
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            var socket;
+            $(document).ready(function(){
+                socket = io.connect('http://127.0.0.1:5000/chat');
+                socket.on('connect', function() {
+                    socket.emit('join', {});
+                });
+                socket.on('status', function(data) {
+                    $('#chat').val($('#chat').val() + '<' + data.msg + '>\n');
+                    $('#chat').scrollTop($('#chat')[0].scrollHeight);
+                });
+                socket.on('message', function(data) {
+                    $('#chat').val($('#chat').val() + data.msg + '\n');
+                    $('#chat').scrollTop($('#chat')[0].scrollHeight);
+                });
+                $('#send').click(function(e) {
+                        text = $('#text').val();
+                        $('#text').val('');
+                        socket.emit('text', {msg: text});
+                });
+            });
+            function leave_room() {
+                socket.emit('left', {}, function() {
+                    socket.disconnect();
+                    window.location.href = "{{ url_for('index') }}";
+                });
+            }
+        </script>
+    <style>
+        btn {
+ position: relative;
+ padding: 1em 1.8em;
+ outline: none;
+ border: 1px solid #303030;
+ background: #FFFFFF;
+ color: #303030;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 10px;
+ overflow: hidden;
+ transition: 0.2s;
+ border-radius: 15px;
+ cursor: pointer;
+ font-weight: bold;
+}
+
+btn:hover {
+ box-shadow: 0 0 10px #5d00ff, 0 0 25px #001eff, 0 0 50px #007bff;
+ transition-delay: 0.6s;
+}
+
+button span {
+ position: absolute;
+}
+
+btn span:nth-child(1) {
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #5d00ff);
+}
+
+btn:hover span:nth-child(1) {
+ left: 100%;
+ transition: 0.7s;
+}
+
+btn span:nth-child(3) {
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #001eff);
+}
+
+btn:hover span:nth-child(3) {
+ right: 100%;
+ transition: 0.7s;
+ transition-delay: 0.35s;
+}
+
+btn span:nth-child(2) {
+ top: -100%;
+ right: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(180deg, transparent, #007bff);
+}
+
+btn:hover span:nth-child(2) {
+ top: 100%;
+ transition: 0.7s;
+ transition-delay: 0.17s;
+}
+
+btn span:nth-child(4) {
+ bottom: -100%;
+ left: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(360deg, transparent, #001eff);
+}
+
+btn:hover span:nth-child(4) {
+ bottom: 100%;
+ transition: 0.7s;
+ transition-delay: 0.52s;
+}
+
+btn:active {
+ background: #ae00af;
+ background: linear-gradient(to top right, #5d00ff, #001eff);
+ color: #bfbfbf;
+ box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #5d00ff;
+ transition: 0.1s;
+}
+
+btn:active span:nth-child(1)
+span:nth-child(2)
+span:nth-child(2)
+span:nth-child(2) {
+ transition: none;
+ transition-delay: none;
+}
+
+body {
+    background: url(https://i.ibb.co/K0bM0nq/lmhb-WPI5w-Y.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+   }
+    </style>
+  </head>
+
+  <body class="text-center">
+
+    <div class="chatwindow">
+        <h2><font style="italic" face="footlight mt light">&#128156;Welcome to ARMY chat!&#128156;</font></h2>
+        <h2><font style="italic" face="footlight mt light">Room : {{session['room']}}</font></h2><br>
+      <textarea id="chat" cols="70" rows="10" placeholder="No messages yet. Don't be shy to start first!"></textarea><br /><br />
+      <input type="text" id="text" size="60" placeholder="Enter your message here" />
+      <btn type="button" id="send">SEND</btn><br /><br />
+      <center><btn type="button" onclick=leave_room()>See you soon</btn></center>
+    </div>
+  </body>
+
+
+</html>

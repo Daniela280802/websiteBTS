@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <title>Permission to Dance</title>
+    <style>
+
+    body {
+    background: url(https://i.ibb.co/K0bM0nq/lmhb-WPI5w-Y.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+   }
+
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+img[tabindex="0"] {
+  cursor: zoom-in;
+}
+img[tabindex="0"]:focus {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  max-width: 99%;
+  max-height: 99%;
+  margin: auto;
+  box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210,210,210,.4);
+}
+img[tabindex="0"]:focus,
+img[tabindex="0"]:focus ~ * {
+  pointer-events: none;
+  cursor: zoom-out;
+}
+
+btn {
+ position: relative;
+ padding: 1em 1.8em;
+ outline: none;
+ border: 1px solid #303030;
+ background: #FFFFFF;
+ color: #303030;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 10px;
+ overflow: hidden;
+ transition: 0.2s;
+ border-radius: 15px;
+ cursor: pointer;
+ font-weight: bold;
+}
+
+btn:hover {
+ box-shadow: 0 0 10px #5d00ff, 0 0 25px #001eff, 0 0 50px #007bff;
+ transition-delay: 0.6s;
+}
+
+button span {
+ position: absolute;
+}
+
+btn span:nth-child(1) {
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #5d00ff);
+}
+
+btn:hover span:nth-child(1) {
+ left: 100%;
+ transition: 0.7s;
+}
+
+btn span:nth-child(3) {
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #001eff);
+}
+
+btn:hover span:nth-child(3) {
+ right: 100%;
+ transition: 0.7s;
+ transition-delay: 0.35s;
+}
+
+btn span:nth-child(2) {
+ top: -100%;
+ right: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(180deg, transparent, #007bff);
+}
+
+btn:hover span:nth-child(2) {
+ top: 100%;
+ transition: 0.7s;
+ transition-delay: 0.17s;
+}
+
+btn span:nth-child(4) {
+ bottom: -100%;
+ left: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(360deg, transparent, #001eff);
+}
+
+btn:hover span:nth-child(4) {
+ bottom: 100%;
+ transition: 0.7s;
+ transition-delay: 0.52s;
+}
+
+btn:active {
+ background: #ae00af;
+ background: linear-gradient(to top right, #5d00ff, #001eff);
+ color: #bfbfbf;
+ box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #5d00ff;
+ transition: 0.1s;
+}
+
+btn:active span:nth-child(1)
+span:nth-child(2)
+span:nth-child(2)
+span:nth-child(2) {
+ transition: none;
+ transition-delay: none;
+}
+
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+    </style>
+</head>
+
+
+<body>
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+          <font style="italic" face="footlight mt light"><h1>Permission to Dance</h1></font>
+          <font style="italic" face="footlight mt light" color="gray"><h4><p class="text-focus-in">Релиз сингла состоялся в день рождения фандома BTS ARMY<br>'Permission To Dance' была написана Эдом Шираном с его приятелем, певцом группы Snow Patrol, Джонни Макдэйдом, а также британским продюсером Стивом Маком<br>'Permission To Dance' распространяет послание о том, что вам не нужно разрешение на то, чтобы танцевать сколько душе угодно, посвящённое всем, у кого плохой день или кто разочарован перед лицом реальности.</p></h4></font>
+        <p>
+            <btn onclick="window.location.href = '/dynamite';">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Назад
+            </btn>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/LgyywM0/pjimage-2021-12-04-T115954-923.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/dgJMgwy/BTS-will-announce-a-new-album-for-this-2022.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/GvNmDr3/FFOG0-W0-XEAAYS7h-680x375.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/Pgjk1Wf/PMQN2-K7-ZRBE2-ZA4-YKFVEXKCKUA.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/2th2cJ4/unnamed-8.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/Wfzwt3w/5b946bccb1e3b20c581fcf2ed72764b4.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/hYRMBcC/1635169083-907536af-3c6f-4120-b5b5-cbeec8fde22f.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/cr2K2N1/3553210823.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/r5ZQzhk/tumblr-c6712e2619427f17c6a882a2cc6e7afd-cef3ecfb-1280.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/sF4Wxvf/e5a3ca8210fcd1dfe89df634a79b6e51.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/g9Ggp8c/6a89c470e6c2c6add07f10b15dcd118b.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/3y93bXc/7e4f9ef44e53aee6ef8622746a6f733d.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/9csj43d/d5a6291bea84acc223b4a46eb4d49d2e.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/3c22c8h/9434834fd1461eaa289fd21fc533f44b.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/Vt3mFrD/752643fb02f81fb0129e6dcf349df473.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/ww1YtKR/unnamed-9.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/QM6Fmkq/6014e928f1bb0e54d16447ddd4215338.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/NLt16Ry/FCd5c-q-XIAAIE2-C.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/6Rn2m4n/taekook.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/p3ZH7ck/Tran-Li-BTS-Concert-900x675.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+
+</body>

@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <title>Album YNWA</title>
+    <style>
+
+    body {
+    background: url(https://i.ibb.co/K0bM0nq/lmhb-WPI5w-Y.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+   }
+
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+img[tabindex="0"] {
+  cursor: zoom-in;
+}
+img[tabindex="0"]:focus {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  max-width: 99%;
+  max-height: 99%;
+  margin: auto;
+  box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210,210,210,.4);
+}
+img[tabindex="0"]:focus,
+img[tabindex="0"]:focus ~ * {
+  pointer-events: none;
+  cursor: zoom-out;
+}
+
+btn {
+ position: relative;
+ padding: 1em 1.8em;
+ outline: none;
+ border: 1px solid #303030;
+ background: #FFFFFF;
+ color: #303030;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 10px;
+ overflow: hidden;
+ transition: 0.2s;
+ border-radius: 15px;
+ cursor: pointer;
+ font-weight: bold;
+}
+
+btn:hover {
+ box-shadow: 0 0 10px #5d00ff, 0 0 25px #001eff, 0 0 50px #007bff;
+ transition-delay: 0.6s;
+}
+
+button span {
+ position: absolute;
+}
+
+btn span:nth-child(1) {
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #5d00ff);
+}
+
+btn:hover span:nth-child(1) {
+ left: 100%;
+ transition: 0.7s;
+}
+
+btn span:nth-child(3) {
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #001eff);
+}
+
+btn:hover span:nth-child(3) {
+ right: 100%;
+ transition: 0.7s;
+ transition-delay: 0.35s;
+}
+
+btn span:nth-child(2) {
+ top: -100%;
+ right: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(180deg, transparent, #007bff);
+}
+
+btn:hover span:nth-child(2) {
+ top: 100%;
+ transition: 0.7s;
+ transition-delay: 0.17s;
+}
+
+btn span:nth-child(4) {
+ bottom: -100%;
+ left: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(360deg, transparent, #001eff);
+}
+
+btn:hover span:nth-child(4) {
+ bottom: 100%;
+ transition: 0.7s;
+ transition-delay: 0.52s;
+}
+
+btn:active {
+ background: #ae00af;
+ background: linear-gradient(to top right, #5d00ff, #001eff);
+ color: #bfbfbf;
+ box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #5d00ff;
+ transition: 0.1s;
+}
+
+btn:active span:nth-child(1)
+span:nth-child(2)
+span:nth-child(2)
+span:nth-child(2) {
+ transition: none;
+ transition-delay: none;
+}
+
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+    </style>
+</head>
+
+
+<body>
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+          <font style="italic" face="footlight mt light"><h1>You Never Walk Alone</h1></font>
+          <font style="italic" face="footlight mt light"><h3>Tracklist</h3></font>
+          <font style="italic" face="footlight mt light" color="gray" size="4"><p class="text-focus-in">"Intro : Boy Meets Evil"<br>"Blood Sweat & Tears"<br>"Begin" (соло Чонгук)<br>"Lie" (соло Чимина)<br>"Stigma" (соло Тэхёна)<br>"First Love" (соло Юнги)<br>"Reflection" (соло Намджуна)<br>"MAMA" (соло Хосока)<br>"Awake" (соло Джина)<br>"Lost"<br>"BTS Cypher 4"<br>"Am I Wrong"<br>"21st Century Girl"<br>"2! 3!"<br>"Spring Day"<br>"Not Today"<br>"Outro : Wings"<br>"A Supplementary Story : You Never Walk Alone"</p></font>
+        <p>
+            <btn onclick="window.location.href = '/wings';">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Назад
+            </btn>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/ftK0VVq/2980acdfaa1bea8f01170574ad9b70b4.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/SPdj92F/photo-01.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/BLC06xj/bts-you-never-walk-alone-album-certified-gold-in-uk.webp" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/Ssb4snK/wts-lfb-bts-you-never-walk-al-1623152397-1cd2add5.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/HtzYnPz/5e7ffed59f5a858fd9cc2c859c86ebc7.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/7z9nd2X/original-2.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/DVS5dPf/cdeae1253bc244249ad4d1d1c1fdb670.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/YBD3BR9/15829a1eaaebd8815a93e1b29222ed3982f9ebb3-hq.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/ZG0Z1nx/tumblr-olccvf-Bb-Go1u20wb7o1-500.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/6DKNg7W/8471eed317d53e5a12aa664d5e7d5ebc.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/TtcDyVz/c98a7cbf1b91a61ce1990e5782082c83c164f51d-hq.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/bv8Jq7p/tumblr-8aa7b396cef71a82495a581486c90472-afbfa2dd-540.png" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/2P08pns/f8acaf68358b6e24bb7a002ecd6df98e.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/QYp3YYM/f97c297dcf7d895bccec0925a3d08721-min-yoongi-bts-min-suga.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/tcJRYf7/e97c87b5c9caea48ad9df586ce2e539de82dd536-hq.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/jGY4JTw/7ef1abd3128b0dfcee71387640e78ad7-min-yoongi-bts-min-suga.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/k8KgTBg/c51d6cd1c2b9686fe3b5589357e9d8f2.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/nPf6599/87c3c78440128c816c5cdcb793941b41.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/xqFd80C/c7f7d7f9e30d697a4605028e91ad9140.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/MBZTnJF/8ff3fb58b4c714c5d77cecf4c253e923b1a8d440-hq.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/C935kVM/ef51d9e3b6a330dcf515e204c8d06a04.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/w49BX9r/k-Uo-PQt62k-N8-ZOs-S6-Dm-BAgvkncl-BDg-T7g9m0-CSw-Bd3-Aqxv-KDp-T4-W8cx9t-Z2-A6-R1no-Igg4-P1hvj-F-m-HX.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/T1Td7H8/z-WAjdk0qw-OPZOjv0-As-XBt-Vzw-Vo-Gk-Kvqu1g-USZFn-K9-Py-G2-TRbp-T7-EYMSwwbl-Ak45-PMR-ko-Sa-VRo-GSUzqs.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/hYk8LQw/Jt-H4-Xud-MNVwt-rp6n-Xx-Sf33soz-A-HQoxx-G3-RA4-Ul7trs7-VAbx-Arl-IAW7-WEIFep-KMzgijtj-Mf-S6-Quyk4-Eb.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/HTsQfQ3/tumblr-ol07p9-BGRk1vfoga3o1-1280.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/Yh4w7NG/63feb07620c1fab54e98ed2139be8aae.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/znGwY6K/c3dfa543c81b04dcb9024aa431dffb89.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/F3rff3G/73269f7e849e8f57fa984374850b4cc849b2b056-hq.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/1ZvrNg4/138dde73e35549768d67e6cc54e2dbfb.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/Db0w3kB/3639a17615b35e93fe5f531e6bf3b5ea.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/TgMCMPw/bc5b58bb3ddf55dec7adfac77d62fa20.jpg" width="300" tabindex="0"/>
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/zr2kfxZ/2a4ca7e415d2d49b1429c7cc2843a535.jpg" width="300" tabindex="0"/>
+  </div>
+</div>
+
+</body>

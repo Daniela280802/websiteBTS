@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ARMY chat</title>
+    <link href="../static/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/style.css" rel="stylesheet">
+    <style>
+        body {
+    background: url(https://i.ibb.co/fDWWCmW/tumblr-85b2b28f3366f4e1018783a1702fd28d-c4d020db-500.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+   }
+    </style>
+</head>
+<body class="text-center">
+  <form class="form-signin" action="{{url_for('chat')}}" method="POST">
+      <a href="/"><img src="https://i.ibb.co/vmJtWjS/HYqr-GGLZub-U-removebg-preview-1.png" width="40"
+   height="30" border="0"></a>
+      <h1 class="h2 mb-3 font-weight-normal"><font style="italic" face="footlight mt light">I waited for you!</font></h1><br>
+      <h2 class="blog-header-logo text-dark"><font face="Segoe script">mannaseo ban-ga'wo'yo</font></h2>&#128156;<br><br>
+    <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus><br>
+    <input type="text" id="room" name="room" class="form-control" placeholder="Room" required><br>
+    <button class="btn btn-lg btn-primary btn-block" value="submit">Start Chat</button>
+  </form>
+</body>
+</html>

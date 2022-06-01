@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <title>Wings</title>
+    <style>
+    .focus-in-contract-bck {
+	-webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+            transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+            transform: translateZ(12px);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+            transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+            transform: translateZ(12px);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+
+        body {
+    background: url(https://i.ibb.co/K0bM0nq/lmhb-WPI5w-Y.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+   }
+
+
+   btn {
+ position: relative;
+ padding: 1em 1.8em;
+ outline: none;
+ border: 1px solid #303030;
+ background: #FFFFFF;
+ color: #303030;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 10px;
+ overflow: hidden;
+ transition: 0.2s;
+ border-radius: 15px;
+ cursor: pointer;
+ font-weight: bold;
+}
+
+btn:hover {
+ box-shadow: 0 0 10px #5d00ff, 0 0 25px #001eff, 0 0 50px #007bff;
+ transition-delay: 0.6s;
+}
+
+button span {
+ position: absolute;
+}
+
+btn span:nth-child(1) {
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #5d00ff);
+}
+
+btn:hover span:nth-child(1) {
+ left: 100%;
+ transition: 0.7s;
+}
+
+btn span:nth-child(3) {
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #001eff);
+}
+
+btn:hover span:nth-child(3) {
+ right: 100%;
+ transition: 0.7s;
+ transition-delay: 0.35s;
+}
+
+btn span:nth-child(2) {
+ top: -100%;
+ right: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(180deg, transparent, #007bff);
+}
+
+btn:hover span:nth-child(2) {
+ top: 100%;
+ transition: 0.7s;
+ transition-delay: 0.17s;
+}
+
+btn span:nth-child(4) {
+ bottom: -100%;
+ left: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(360deg, transparent, #001eff);
+}
+
+btn:hover span:nth-child(4) {
+ bottom: 100%;
+ transition: 0.7s;
+ transition-delay: 0.52s;
+}
+
+btn:active {
+ background: #ae00af;
+ background: linear-gradient(to top right, #5d00ff, #001eff);
+ color: #bfbfbf;
+ box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #5d00ff;
+ transition: 0.1s;
+}
+
+btn:active span:nth-child(1)
+span:nth-child(2)
+span:nth-child(2)
+span:nth-child(2) {
+ transition: none;
+ transition-delay: none;
+}
+
+
+.cta {
+ border: none;
+ background: none;
+}
+
+.cta span {
+ padding-bottom: 7px;
+ letter-spacing: 4px;
+ font-size: 10px;
+ padding-right: 15px;
+ text-transform: uppercase;
+}
+
+.cta svg {
+ transform: translateX(-8px);
+ transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+ transform: translateX(0);
+}
+
+.cta:active svg {
+ transform: scale(0.9);
+}
+
+.hover-underline-animation {
+ position: relative;
+ color: black;
+ padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+ content: "";
+ position: absolute;
+ width: 100%;
+ transform: scaleX(0);
+ height: 1.5px;
+ bottom: 0;
+ left: 0;
+ background-color: #000000;
+ transform-origin: bottom right;
+ transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+ transform: scaleX(1);
+ transform-origin: bottom left;
+}
+
+.wrap {
+    width: 34%;
+   }
+
+.mg {
+    margin-left: 21%;
+}
+
+bckgr {
+    background-image: url(https://i.ibb.co/cxC6yRy/ezgif-com-gif-maker-4.gif);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+    background-clip: border-box;
+    }
+
+
+    </style>
+</head>
+
+
+<body>
+
+
+<header class="blog-header py-3">
+      <div class="row flex-nowrap align-items-center">
+        <center>
+      <div class="col-4 text-center">
+          <a href="/"><img src="https://i.ibb.co/vmJtWjS/HYqr-GGLZub-U-removebg-preview-1.png" width="40"
+   height="30" border="0"></a>
+        <center><h1 class="blog-header-logo text-dark"><font face="Segoe script">Yeondagi</font></h1></center>
+      </div>
+        </center>
+    </div>
+  </header>
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+        <bckgr>
+      <div class="col-lg-6 col-md-8 mx-auto">
+          <font style="italic" face="footlight mt light"><h1 class="focus-in-contract-bck">Wings</h1></font>
+          <font style="italic" face="footlight mt light" color="gray" size="4"><p>Данная эра рассказывает нам о соблазнах с которыми приходится сталкиваться молодому человеку во взрослом мире. В этом альбоме BTS хотят сказать, что стоят перед новой дверью. Альбом содержит соло-треки всех участников, каждый вложил в свою песню частичку своей истории. </p></font>
+        <p>
+            <btn onclick="window.location.href = '/youth';">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Предыдущая эра
+            </btn>
+
+            <btn onclick="window.location.href = '/love';">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Следующая эра
+            </btn>
+        </p>
+      </div>
+        </bckgr>
+    </div>
+  </section>
+
+
+    <div class="container mg">
+        <div class="row">
+        <div class="wrap">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/2yLGZys/BTS-Wings-digital-cover-art.webp" width="420" hight="240">
+
+            <div class="card-body">
+                <font style="italic" color="#4169E1" face="footlight mt light" align="left"><p class="card-text">Wings</p></font>
+                <font style="italic" face="footlight mt light" align="left"><p class="card-text">Релиз альбома: 10 октября 2016 года</p></font>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <button class="cta" onclick="window.location.href = '/phwings';">
+                    <span class="hover-underline-animation">Фотографии </span>
+                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                    <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                    </svg>
+                    </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+<div class="wrap">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/f2HVH7G/BTS-You-Never-Walk-Alone-digital-cover-art.webp" width="420" hight="240">
+
+            <div class="card-body">
+                <font style="italic" color="#4169E1" face="footlight mt light" align="left"><p class="card-text">Wings: You Never Walk Alone</p></font>
+                <font style="italic" face="footlight mt light" align="left"><p class="card-text">Релиз альбома: 13 февраля 2017 года</p></font>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <button class="cta" onclick="window.location.href = '/phwalkalone';">
+                    <span class="hover-underline-animation">Фотографии </span>
+                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                    <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                    </svg>
+                    </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+</main>
+
+
+
+
+
+
+
+</body>
